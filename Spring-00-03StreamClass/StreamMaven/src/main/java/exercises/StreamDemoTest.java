@@ -7,7 +7,6 @@ import enums.Status;
 
 import java.util.List;
 
-
 public class StreamDemoTest {
     public static void main(String[] args) {
 

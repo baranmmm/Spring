@@ -56,7 +56,6 @@ public class StreamDemo {
         return userList;
     }
 
-
     //Task-6
     public static List<User> getUserByFirstName(String firstName){
 
