@@ -1,10 +1,18 @@
 package exercises;
 
 
+import company.Project;
+import company.Role;
+import company.User;
+import enums.Gender;
+import enums.Status;
+
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class DataGenerator {
 
