@@ -2,47 +2,28 @@ package services;
 
 import interfaces.Course;
 import interfaces.ExtraSessions;
+import lombok.Data;
 
+@Data
 public class Java implements Course {
+    private OfficeHours officeHours;
+    private ExtraSessions extraSessions;
 
-    OfficeHours officeHours;
-    ExtraSessions extraSessions;
 
-    public Java(OfficeHours officeHours) {
+    public OfficeHours getOfficeHours() {
+        return officeHours;
+    }
+
+    public void setOfficeHours(OfficeHours officeHours) {
         this.officeHours = officeHours;
     }
 
-    public Java(ExtraSessions extraSessions){
-        this.extraSessions=extraSessions;
-    }
-
-
-
     @Override
     public void getTeachingHours() {
-
-        System.out.println("Weekly Teaching Hours : 20");
-
+        System.out.println("Weekly Teaching Hours : " + (20 + officeHours.getHours()));
     }
 
-
-    public void getTotalTeachingHours(){
-
-        System.out.println("Weekly Total Teaching Hours : " + (20 + officeHours.getHours()));
-
+    public void getTeachingHoursThroughInterface(){
+        System.out.println("Weekly Teaching Hours : "+ (20 + extraSessions.getHours()));
     }
-
-
-    public void getTotalTeachingHoursThroughInterface() {
-        System.out.println("Weekly Total Teaching Hours : "+(20 +extraSessions.getHours()));
-    }
-
-
-
-//    @Override
-//    public void getTotalTeachingHoursThroughInterface(){
-//        //If we use interface for
-//        System.out.println("Weekly Total Teaching Hours : "+(20 +extraSessions.getHours()));
-//    }
-
 }

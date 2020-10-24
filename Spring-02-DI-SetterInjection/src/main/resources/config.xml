@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="java" class="services.Java">
-        <constructor-arg ref="officeHours"/>
+        <property name="officeHours" ref="officeHours"></property>
     </bean>
     <bean id="selenium" class="services.Selenium"></bean>
 
@@ -13,8 +13,10 @@
     <bean id="extraHours" class="services.ExtraHours"></bean>
 
     <bean id="java2" class="services.Java">
-        <constructor-arg ref="extraHours"/>
+        <property name="extraSessions" ref="officeHours"></property>
     </bean>
+
+
 
 
 

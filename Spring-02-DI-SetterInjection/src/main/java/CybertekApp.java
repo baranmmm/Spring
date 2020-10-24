@@ -15,16 +15,11 @@ public class CybertekApp {
         Course seleniumCourse = (Course) container.getBean("selenium");
         seleniumCourse.getTeachingHours();
 
+        Java javaCourse2= (Java) container.getBean("java2");
+        javaCourse2.getTeachingHoursThroughInterface();
 
 
-        Java javaCourse2= (Java) container.getBean("java");
 
-        javaCourse2.getTotalTeachingHours();
-
-        System.out.println("***********");
-        Java javaCourse3 = (Java) container.getBean("java2");
-
-        javaCourse3.getTotalTeachingHoursThroughInterface();
 
 
     }
