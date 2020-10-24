@@ -19,10 +19,10 @@ public class CybertekApp {
 
         Java javaCourse2= (Java) container.getBean("java");
 
-//        javaCourse2.getTotalTeachingHours();
+        javaCourse2.getTotalTeachingHours();
 
         System.out.println("***********");
-        Java javaCourse3 = (Java) container.getBean("java");
+        Java javaCourse3 = (Java) container.getBean("java2");
 
         javaCourse3.getTotalTeachingHoursThroughInterface();
 
