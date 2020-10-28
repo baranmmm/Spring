@@ -4,11 +4,9 @@ import interfaces.Course;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Selenium implements Course {
-
-
+public class Api implements Course {
+    @Override
     public void getTeachingHours() {
-        System.out.println("Weekly Teaching Hours : 25");
-
+        System.out.println("Weekly teaching hours are 55");
     }
 }
