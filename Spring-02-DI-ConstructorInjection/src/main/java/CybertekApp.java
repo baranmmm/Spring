@@ -1,7 +1,7 @@
-import interfaces.Course;
+import com.cybertek.interfaces.Course;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import services.Java;
+import com.cybertek.services.Java;
 
 public class CybertekApp {
 

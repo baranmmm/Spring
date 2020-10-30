@@ -1,5 +1,4 @@
-import interfaces.Mentor;
-import org.springframework.beans.factory.BeanFactory;
+import com.cybertek.interfaces.Mentor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
