@@ -1,2 +1,6 @@
-package com.cybertek.interfaces;public interface ExtraSessions {
+package com.cybertek.interfaces;
+
+public interface ExtraSessions {
+
+    int extraSession();
 }

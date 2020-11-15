@@ -1,2 +1,8 @@
-package com.carpet.interfaces;public interface Carpet {
+package com.carpet.interfaces;
+
+public interface Carpet {
+
+    double getPrice();
+
+
 }
