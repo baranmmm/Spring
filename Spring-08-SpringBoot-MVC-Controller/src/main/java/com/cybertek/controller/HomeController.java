@@ -63,11 +63,20 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/home2/course")
+    public String requestParam3(@RequestParam("course") String course){
+
+        System.out.println("Course is "+ course);
+
+        return "home";
+    }
+
 
     @GetMapping("new/courses")
     public String requestParam2(@RequestParam(value = "courses", required = false, defaultValue = "cybertek") String name){
 
         System.out.println("name is " + name);
         return "home";
+
     }
 }
