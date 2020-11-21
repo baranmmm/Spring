@@ -8,10 +8,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/mentor")
 public class MentorController {
 
-    @GetMapping("/course")
-    public String getMentorCourse(){
-
-        return "/mentor/course";
-    }
 
 }

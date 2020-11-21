@@ -11,7 +11,7 @@
 	<groupId>com</groupId>
 	<artifactId>cybertek</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cybertekmvc</name>
+	<name>cybertek</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -43,15 +43,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.thymeleaf</groupId>
-			<artifactId>thymeleaf-spring5</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>nz.net.ultraq.thymeleaf</groupId>
-			<artifactId>thymeleaf-layout-dialect</artifactId>
 		</dependency>
 	</dependencies>
 
